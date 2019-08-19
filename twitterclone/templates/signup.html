@@ -1,0 +1,13 @@
+<body style="margin-left: 75px; margin-top:30px;";> </body>
+
+<h1 style="color:#00aced;font-family:Arial, Helvetica, sans-serif">Let's get you tweeting:</h1>
+
+<br>
+
+<form action="/signup/" method="post">
+    {% csrf_token%}
+    {{ form.as_p }}
+    <div class="row justify-content-center">
+        <input type="submit" value="Add User" id="button"/>
+    </div>
+</form>
