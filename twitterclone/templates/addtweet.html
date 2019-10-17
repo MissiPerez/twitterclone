@@ -1,1 +1,8 @@
 <h1 style="color:#00aced;font-family:Arial, Helvetica, sans-serif">What's on your mind?</h1>
+
+<form action="" method="post">
+    {% csrf_token %}
+    {{ form.as_p }}
+    <input type="submit" value="Tweet" id="button" style="color:#1A5276;font-size:16px;"/>
+
+</form>

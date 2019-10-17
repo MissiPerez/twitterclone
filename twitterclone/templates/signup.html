@@ -2,12 +2,12 @@
 
 <h1 style="color:#00aced;font-family:Arial, Helvetica, sans-serif">Let's get you tweeting:</h1>
 
-<br>
-
-<form action="/signup/" method="post">
-    {% csrf_token%}
+<form action="" method="post">
+    {% csrf_token %}
     {{ form.as_p }}
-    <div class="row justify-content-center">
-        <input type="submit" value="Add User" id="button"/>
-    </div>
+    <input type="submit" value="Signup" id="button" style="color:#1A5276;font-size:16px;"/>
+    <br>
+    <br>
+    <br>
+    <a href="/"><button style="color:#1A5276">Go Home!</button></a>
 </form>
